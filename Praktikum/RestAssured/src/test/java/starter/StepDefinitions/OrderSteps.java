@@ -7,8 +7,12 @@ import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 import starter.altashop.orders.GetAllOrder;
 import starter.altashop.orders.GetIdOrder;
+import starter.altashop.orders.PostOrder;
 
 public class OrderSteps {
+
+    @Steps
+    PostOrder postOrder;
     @Steps
     GetAllOrder getAllOrder;
     @Steps
@@ -35,22 +39,22 @@ public class OrderSteps {
     }
 
     @Given("I set the POST api endpoints in order")
-    public void iSetThePOSTApiEndpointsInOrder() {
+    public void iSetThePOSTApiEndpointsInOrder() { postOrder.iSetThePOSTApiEndpointsInOrder();
         
     }
 
     @When("I send HTTP api POST request for order")
-    public void iSendHTTPApiPOSTRequestForOrder() {
+    public void iSendHTTPApiPOSTRequestForOrder() { postOrder.iSendHTTPApiPOSTRequestForOrder();
         
     }
 
     @Then("I receive a valid HTTP response code {int} on the order POST")
-    public void iReceiveAValidHTTPResponseCodeOnTheOrderPOST(int arg0) {
+    public void iReceiveAValidHTTPResponseCodeOnTheOrderPOST(int arg0) { postOrder.iReceiveAValidHTTPResponseCodeOnTheOrderPOST();
         
     }
 
     @And("I receive valid data for create new order")
-    public void iReceiveValidDataForCreateNewOrder() {
+    public void iReceiveValidDataForCreateNewOrder() { postOrder.iReceiveValidDataForCreateNewOrder();
         
     }
 

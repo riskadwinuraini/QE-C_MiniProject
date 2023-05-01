@@ -25,6 +25,5 @@ public class GetAllOrder {
     }
     @Step("I received valid data for all order")
     public void iReceivedValidDataForAllOrder(){
-
     }
 }
