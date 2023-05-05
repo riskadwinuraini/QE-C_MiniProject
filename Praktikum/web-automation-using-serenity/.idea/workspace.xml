@@ -13,14 +13,12 @@
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/test/alta/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/Register.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/starter/CucumberTestSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/starter/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/starter/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/starter/pages/RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/LoginSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/RegisterSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/Login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/Register.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/Authentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/Authentication.feature" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/webdriver/chromedriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,14 +57,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/QE-C_MiniProject/Praktikum/web-automation-using-serenity&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/MiniProject"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\qe_riska-dwi-nur-aini\11_Web Programming &amp; Testing\Praktikum\sepulsawebtesting\src\test\resources\webdriver" />
