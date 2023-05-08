@@ -17,7 +17,9 @@ public class Register extends PageObject {
         return By.xpath("//input[@id= 'input-24']");
     }
     private By registerButton(){
-        return By.xpath("//button[@class= 'v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default primary']");
+        return By.xpath("//button[@class= 'v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default primary']");}
+    private By errorMessage(){
+        return By.xpath("//div[@class='v-alert v-sheet theme--light elevation-2 v-alert--border v-alert--border-top']");
     }
 
 
@@ -44,6 +46,15 @@ public class Register extends PageObject {
     @Step
     public void ClickRegisterButton() {
         $(registerButton()).click();
+    }
+    @Step
+    public boolean validateErrorMessageDisplayed(){
+        return $(errorMessage()).isDisplayed();
+    }
+
+    @Step
+    public boolean validateEqualErrorMessage(String message){
+        return $(errorMessage()).getText().equalsIgnoreCase(message);
     }
 
 

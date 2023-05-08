@@ -21,7 +21,7 @@ Feature: product
           Given I set POST endpoints
           When I send POST HTTP request
           Then I receive a valid HTTP response code 200 in products POST
-          And I receive valid data for new user
+          And I receive valid data for new product
 
           Scenario: GET As an admin I have be able to get products rating
             Given I set GET endpoints by rating

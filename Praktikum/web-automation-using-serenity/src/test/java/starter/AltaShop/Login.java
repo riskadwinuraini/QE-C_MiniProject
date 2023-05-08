@@ -41,5 +41,14 @@ public class Login extends PageObject {
     public void ClickLoginButton(){
         $(loginButton()).click();
     }
+    @Step
+    public boolean validateErrorMessageDisplayed(){
+        return $(errorMessage()).isDisplayed();
+    }
+
+    @Step
+    public boolean validateEqualErrorMessage(String message){
+        return $(errorMessage()).getText().equalsIgnoreCase(message);
+    }
 
 }

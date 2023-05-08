@@ -43,7 +43,11 @@ public class Authentication {
     @Then("I'm on the login page")
     public void iMOnTheLoginPage() { register.openUrl("https://alta-shop.vercel.app/auth/login");
     }
+    @Then("I can see error message")
+    public void iCanSeeErrorMessage() {
+        register.validateErrorMessageDisplayed();
 
+    }
 
     @Given("I am on the login page")
     public void iAmOnTheLoginPage() {
@@ -68,6 +72,12 @@ public class Authentication {
 
     @Then("I am on the home page")
     public void iAmOnTheHomePage() {
-        login.openUrl("https://alta-shop.vercel.app");
+        home.validateOnTheHomePage();
+    }
+
+    @And("I can see error message {string}")
+    public void iCanSeeErrorMessage(String message) {
+        login.validateErrorMessageDisplayed();
+        login.validateEqualErrorMessage(message);
     }
 }

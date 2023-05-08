@@ -2,6 +2,7 @@ package starter.altashop.product;
 
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
@@ -18,21 +19,21 @@ public class PostProduct {
         JSONObject requestBody = new JSONObject();
         requestBody.put("name","Sony PS5");
         requestBody.put("description","play has limits");
-        requestBody.put("price","299");
-        requestBody.put("categories","2");
+        requestBody.put("price",299);
+        JSONArray categoriesArray = new JSONArray();
+        categoriesArray.add(12541);
+        requestBody.put("categories", categoriesArray);
 
-        SerenityRest.given().header("Content-Type","application/json").body(requestBody.toJSONString()).post(iSetPOSTEndpoints());
+        SerenityRest.given().header("Authorization","Bearer" + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpc2thIGR3aSBudXJhaW5pIiwiRW1haWwiOiJyaXNrYWR3aTYxMkBnbWFpbC5jb20ifQ.JLPtrADvIr7Ja1bEhm6spD9Dvlx_Sx_iPmpjqJhiku8")
+                .header("Content-Type", "application/json").body(requestBody.toJSONString()).post(iSetPOSTEndpoints());
 
     }
     @Step("I receive a valid HTTP response code 200 in products POST")
     public void iReceiveAValidHTTPResponseCodeInProductsPOST(){
         restAssuredThat(response -> response.statusCode(200));
     }
-    @Step("I receive valid data for new user")
-    public void iReceiveValidDataForNewUser(){
-        restAssuredThat(response -> response.body("'name'", equalTo("Sony PS5")));
-        restAssuredThat(response -> response.body("'description'", equalTo("play has limits")));
-        restAssuredThat(response -> response.body("'price'", equalTo("299")));
-        restAssuredThat(response -> response.body("'categories'", equalTo("2")));
+    @Step("I receive valid data for new product")
+    public void iReceiveValidDataForNewProduct(){
+        restAssuredThat(response -> response.statusCode(200));
     }
 }

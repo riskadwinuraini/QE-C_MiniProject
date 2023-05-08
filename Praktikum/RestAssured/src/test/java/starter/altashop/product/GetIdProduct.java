@@ -11,7 +11,7 @@ public class GetIdProduct {
 
     @Step("I set GET endpoints by id")
     public String iSetGETEndpointsById(){
-        return url+ "products/11274";
+        return url+ "products/13369";
     }
     @Step("I send GET HTTP request by id")
     public void iSendGETHTTPRequestById(){

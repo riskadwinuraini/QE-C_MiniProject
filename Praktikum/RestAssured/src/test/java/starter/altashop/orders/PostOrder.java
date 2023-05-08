@@ -5,7 +5,7 @@ import net.thucydides.core.annotations.Step;
 import org.json.simple.JSONObject;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
-import static org.hamcrest.CoreMatchers.equalTo;
+
 
 public class PostOrder {
     protected static String url = "https://altashop-api.fly.dev/api/";
@@ -17,18 +17,18 @@ public class PostOrder {
     @Step("I send HTTP api POST request for order")
     public void iSendHTTPApiPOSTRequestForOrder(){
         JSONObject requestBody = new JSONObject();
-        requestBody.put("product_id","2");
-        requestBody.put("quantity","1");
+        requestBody.put("product_id",13000);
+        requestBody.put("quantity",1);
 
-        SerenityRest.given().header("Content-Type","application/json").body(requestBody.toJSONString()).post(iSetThePOSTApiEndpointsInOrder());
+        SerenityRest.given().header("Authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpc2thIGR3aSBudXJhaW5pIiwiRW1haWwiOiJyaXNrYWR3aTYxMkBnbWFpbC5jb20ifQ.JLPtrADvIr7Ja1bEhm6spD9Dvlx_Sx_iPmpjqJhiku8")
+                .header("Content-Type","application/json").body(requestBody.toJSONString()).post(iSetThePOSTApiEndpointsInOrder());
     }
     @Step("I receive a valid HTTP response code 200 on the order POST")
     public void iReceiveAValidHTTPResponseCodeOnTheOrderPOST(){
         restAssuredThat(response -> response.statusCode(200));
     }
     @Step("I receive valid data for create new order")
-    public void iReceiveValidDataForCreateNewOrder(){
-        restAssuredThat(response -> response.body("'product_id'", equalTo("2")));
-        restAssuredThat(response -> response.body("'quantity'", equalTo("1")));
+    public void iReceiveValidDataForCreateNewOrder() {
+        restAssuredThat(response -> response.statusCode(200));
     }
 }

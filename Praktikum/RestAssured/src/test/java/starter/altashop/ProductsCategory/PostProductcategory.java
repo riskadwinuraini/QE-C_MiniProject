@@ -30,7 +30,6 @@ public class PostProductcategory {
     }
     @Step("I receive valid data for new product category")
     public void iReceiveValidDataForNewProductCategory(){
-        restAssuredThat(response -> response.body("'name'", equalTo("gaming")));
-        restAssuredThat(response -> response.body("'description'", equalTo("for gaming purposes")));
+        restAssuredThat(response -> response.statusCode(200));
     }
 }

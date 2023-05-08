@@ -14,7 +14,6 @@ public class ProductSteps {
     GetIdProduct getIdProduct;
     @Steps
     DeleteProduct deleteProduct;
-
     @Steps
     PostProduct postProduct;
 
@@ -89,8 +88,8 @@ public class ProductSteps {
         
     }
 
-    @And("I receive valid data for new user")
-    public void iReceiveValidDataForNewUser() { postProduct.iReceiveValidDataForNewUser();
+    @And("I receive valid data for new product")
+    public void iReceiveValidDataForNewUser() { postProduct.iReceiveValidDataForNewProduct();
 
     }
 

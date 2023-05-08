@@ -2,6 +2,7 @@ package starter.altashop.authentication;
 
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.json.simple.JSONObject;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
@@ -14,9 +15,11 @@ public class Register {
     }
     @Step("I submit a POST request to {string} with fullname Riska Dwi Nur Aini, email riskadwi583@gmail.com and password Riskaya123")
     public void POSTRequestToWithFullnameEmailAndPassword(){
+        String alphabet = "abcdef";
+        String s = RandomStringUtils.random(8, alphabet);
         JSONObject requestBody = new JSONObject();
         requestBody.put("fullname", "Riska Dwi Nur Aini");
-        requestBody.put("email", "riskadwi583@gmail.com");
+        requestBody.put("email",s + "@gmail.com");
         requestBody.put("password", "Riskaya123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(RegisterUsingTheCorrectData());

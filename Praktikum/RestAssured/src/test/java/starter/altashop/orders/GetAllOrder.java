@@ -2,6 +2,7 @@ package starter.altashop.orders;
 
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
+import org.json.simple.JSONObject;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
@@ -15,9 +16,10 @@ public class GetAllOrder {
     }
     @Step("I send HTTP api GET request for order")
     public void iSendHTTPApiGETRequestForOrder(){
-        SerenityRest.given()
-                .when()
+        SerenityRest.given().header("Authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpc2thIGR3aSBudXJhaW5pIiwiRW1haWwiOiJyaXNrYWR3aTYxMkBnbWFpbC5jb20ifQ.JLPtrADvIr7Ja1bEhm6spD9Dvlx_Sx_iPmpjqJhiku8")
                 .get(iSetTheGETApiEndpointForOrder());
+
+
     }
     @Step("I receive valid HTTP response code 200 for get all data order")
     public void iReceiveValidHTTPResponseCodeForGetAllDataOrder(){
@@ -25,5 +27,6 @@ public class GetAllOrder {
     }
     @Step("I received valid data for all order")
     public void iReceivedValidDataForAllOrder(){
+        restAssuredThat(response -> response.statusCode(200));
     }
 }

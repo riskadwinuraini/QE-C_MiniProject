@@ -10,7 +10,7 @@ public class GetIdProductCategory {
 
     @Step("I set the GET api endpoints by id")
     public String iSetTheGETApiEndpointsById(){
-        return url + "categories/11304";
+        return url + "categories/12505";
     }
     @Step("I send HTTP api GET request by id")
     public void iSendHTTPApiGETRequestById(){
