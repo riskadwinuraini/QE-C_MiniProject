@@ -13,12 +13,23 @@
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/test/alta/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/Buy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/Detail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/DetailPage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/Home.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/Login.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/AltaShop/Transaction.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/starter/CucumberTestSuite.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/Authentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/CategorySteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/DetailSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/starter/stepdefinitions/TransactionSteps.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/feature/Authentication.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/Detail.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/category.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/transaction.feature" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/webdriver/chromedriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +73,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/QE-C_MiniProject/Praktikum/web-automation-using-serenity"
+    "last_opened_file_path": "D:/QE-C_MiniProject/Praktikum/RestAssured"
   }
 }]]></component>
   <component name="RecentsManager">

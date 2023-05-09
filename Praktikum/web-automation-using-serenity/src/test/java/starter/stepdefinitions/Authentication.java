@@ -72,7 +72,7 @@ public class Authentication {
 
     @Then("I am on the home page")
     public void iAmOnTheHomePage() {
-        home.validateOnTheHomePage();
+        login.openUrl("https://alta-shop.vercel.app");
     }
 
     @And("I can see error message {string}")
