@@ -10,11 +10,11 @@ public class GetIdOrder {
 
     @Step("I set the GET api endpoint for order by id")
     public String iSetTheGETApiEndpointForOrderById(){
-        return url + "orders/10776";
+        return url + "orders/11369";
     }
     @Step("I send HTTP api GET request for order by id")
     public void iSendHTTPApiGETRequestForOrderById(){
-        SerenityRest.given().header("Authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpc2thIGR3aSBudXJhaW5pIiwiRW1haWwiOiJyaXNrYWR3aTYxMkBnbWFpbC5jb20ifQ.JLPtrADvIr7Ja1bEhm6spD9Dvlx_Sx_iPmpjqJhiku8")
+        SerenityRest.given().header("Authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IlJpc2theWEiLCJFbWFpbCI6InJpc2thZHdpNjY2QGdtYWlsLmNvbSJ9.1B3znF3ZyrJINDUI1zNLD5MrfhKsLxDv21xdPb8AWqw")
                 .get(iSetTheGETApiEndpointForOrderById());
     }
 

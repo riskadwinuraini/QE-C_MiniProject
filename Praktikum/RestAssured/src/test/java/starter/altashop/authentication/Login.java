@@ -15,7 +15,7 @@ public class Login {
     @Step("I submit a POST request to {string} with email {string} and password {string}")
     public void iSubmitAPOSTRequestToWithEmailAndPassword(){
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "riskadwi583@gmail.com");
+        requestBody.put("email", "riskadwi666@gmail.com");
         requestBody.put("password", "Riskaya123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(iHaveValidCredentials());

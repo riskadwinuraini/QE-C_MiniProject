@@ -12,14 +12,14 @@ public class PostProductRating {
 
     @Step("I set POST endpoints by rating")
     public String iSetPOSTEndpointsByRating(){
-        return url + "products/13369/ratings";
+        return url + "products/52485/ratings";
     }
     @Step("I send POST HTTP request by rating")
     public void iSendPOSTHTTPRequestByRating(){
         JSONObject requestBody = new JSONObject();
         requestBody.put("count",4);
 
-        SerenityRest.given().header("Authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpc2thIGR3aSBudXJhaW5pIiwiRW1haWwiOiJyaXNrYWR3aTYxMkBnbWFpbC5jb20ifQ.JLPtrADvIr7Ja1bEhm6spD9Dvlx_Sx_iPmpjqJhiku8")
+        SerenityRest.given().header("Authorization","Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IlJpc2theWEiLCJFbWFpbCI6InJpc2thZHdpNjY2QGdtYWlsLmNvbSJ9.1B3znF3ZyrJINDUI1zNLD5MrfhKsLxDv21xdPb8AWqw")
                 .header("Content-Type", "application/json").body(requestBody.toJSONString()).post(iSetPOSTEndpointsByRating());
     }
     @Step("I receive valid HTTP response code 200 in products rating POST")
