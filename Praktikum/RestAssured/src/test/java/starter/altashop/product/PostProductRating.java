@@ -12,7 +12,7 @@ public class PostProductRating {
 
     @Step("I set POST endpoints by rating")
     public String iSetPOSTEndpointsByRating(){
-        return url + "products/85117/ratings";
+        return url + "products/85134/ratings";
     }
     @Step("I send POST HTTP request by rating")
     public void iSendPOSTHTTPRequestByRating(){
