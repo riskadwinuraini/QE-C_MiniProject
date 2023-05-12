@@ -9,11 +9,11 @@ Feature: authentication
 @authentication
     Scenario: Successful login
       Given I have valid credentials
-      When I submit a POST request to "/auth/login" with email "riskadwi666@gmail.com" and password "Riskaya123"
+      When I submit a POST request to "/auth/login" with email "riskash123@gmail.com" and password "Riskaya123"
       Then I receive valid HTTP response code Login 200
 @authentication
       Scenario: Register using a valid full name, email and password
         Given I register using the correct data
-        When I submit a POST request to "/auth/register" with fullname "Riskaya", email "riskadwi666@gmail.com" and password "Riskaya123"
+        When I submit a POST request to "/auth/register" with fullname "riskashh", email "riskash123@gmail.com" and password "Riskaya123"
         Then I receive valid HTTP response code register 200
         And register successfully

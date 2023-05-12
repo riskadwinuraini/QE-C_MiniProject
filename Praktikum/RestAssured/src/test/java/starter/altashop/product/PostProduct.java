@@ -24,7 +24,7 @@ public class PostProduct {
         categoriesArray.add(12541);
         requestBody.put("categories", categoriesArray);
 
-        SerenityRest.given().header("Authorization","Bearer" + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IlJpc2theWEiLCJFbWFpbCI6InJpc2thZHdpNjY2QGdtYWlsLmNvbSJ9.1B3znF3ZyrJINDUI1zNLD5MrfhKsLxDv21xdPb8AWqw")
+        SerenityRest.given().header("Authorization","Bearer" + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InJpc2thc2hoIiwiRW1haWwiOiJyaXNrYXNoMTIzQGdtYWlsLmNvbSJ9.NkOo3kqKAplHa_XMEx7vSn_3aTsqE8i2oDnEEgUfuFg")
                 .header("Content-Type", "application/json").body(requestBody.toJSONString()).post(iSetPOSTEndpoints());
 
     }

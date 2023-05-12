@@ -18,7 +18,7 @@ public class Register {
         String alphabet = "abcdef";
         String s = RandomStringUtils.random(8, alphabet);
         JSONObject requestBody = new JSONObject();
-        requestBody.put("fullname", "Riskaya");
+        requestBody.put("fullname", "riskashh");
         requestBody.put("email",s + "@gmail.com");
         requestBody.put("password", "Riskaya123");
 
